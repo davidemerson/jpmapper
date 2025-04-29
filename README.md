@@ -8,7 +8,10 @@ A golang cli which
     * check buildings and obstructions mid-path
     * report on fresnel zone obstruction.
 
-Source | Used for | How Recent? | Notes
-OpenStreetMap (Overpass API) | Building heights | Depends on user edits; typically updated every few days to few weeks | Crowdsourced; very fresh in cities, slower in rural areas.
-Open Elevation API (based on SRTM, ASTER) | Ground elevation | ~2000-2013 (depending on region) | Derived from NASA Shuttle Radar Topography Mission (SRTM) and ASTER data.
-Nominatim (OpenStreetMap Geocoding) | Address → lat/lon lookup | Real-time (from latest OSM edits) | Updated daily as new OSM edits flow in.
+
+## freshness
+The OpenStreetMap Overpass API is used to get building heights, which are as fresh as a few hours old in some cities, but not more than a year old generally.
+
+The Open Elevation API is more stale, since that's topo maps. The ground doesn't change a lot, which is great. Won't be older than about Y2K.
+
+The OpenStreetMap Geocoding (address lookup from lat/lon) is updated daily.
