@@ -1,4 +1,18 @@
-# jpmapper
+# jpmapper-osm
+
+  _   _   _   _   _   _   _   _  
+ / \ / \ / \ / \ / \ / \ / \ / \ 
+( j | p | m | a | p | p | e | r )
+ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ 
+
+📡  🏛🌲🏗🌲 <<>> 🏢🌲🏚  📡
+
+Julian's Point Mapper
+
+(The OpenStreetMap version)
+
+If you don't want to use LIDAR data (more accurate, more obstructions considered), this application is faster and lighter by a lot. If accuracy of results is paramount, there's a python application which takes geotiff or las files as input and performs similar analyses using first bounce data, https://github.com/davidemerson/jpmapper-lidar
+
 A golang cli which
  * takes address or lat/lon
  * uses the openstreetmap to calculate:
